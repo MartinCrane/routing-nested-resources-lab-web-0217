@@ -5,6 +5,7 @@ RSpec.describe SongsController do
   before do
     Song.destroy_all
     Artist.destroy_all
+    
     @artist = Artist.create(name: "Garth Brooks")
     @song = @artist.songs.create(title: "I'm def not Chris Gaines, Everyone haha what are you talking about?")
   end
